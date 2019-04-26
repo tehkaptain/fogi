@@ -1,0 +1,12 @@
+{
+  "name": "fogi",
+  "version": "1.0.0",
+  "description": "A simple map explorer with fog",
+  "main": "app.js",,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tehkaptain/fogi.git"
+  },
+  "author": "tehkaptain",
+  "homepage": "https://github.com/tehkaptain/fogi#readme"
+}
