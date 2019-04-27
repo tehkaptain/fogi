@@ -17,15 +17,15 @@
     <p>A simple map explorer with fog of war.</p>
     <script type="text/javascript">
     $(document).ready(function() {
-        $('#button').click(function() {
+        $('#loadMap').click(function() {
             $.get('https://fogi.herokuapp.com/request', function(image) {
                 $('#map').html(image);
             });
         });
     });
     </script>
-    <a type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-download"></span> Load Map</a>
-    <a type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-flash"></span> Save Map</a>
+    <a type="button" id="loadMap" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-download"></span> Load Map</a>
+    <a type="button" id="saveMap" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-flash"></span> Save Map</a>
   </div>
 </div>
 <div class="container">
