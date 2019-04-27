@@ -15,11 +15,21 @@
     </a>
     <h1>Fogi</h1>
     <p>A simple map explorer with fog of war.</p>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#button').click(function() {
+            $.get('https://fogi.herokuapp.com/request', function(image) {
+                $('#map').html(image);
+            });
+        });
+    });
+    </script>
     <a type="button" class="btn btn-lg btn-default"><span class="glyphicon glyphicon-download"></span> Load Map</a>
     <a type="button" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-flash"></span> Save Map</a>
   </div>
 </div>
 <div class="container">
+  <div id="map"></div>
   <div class="alert alert-info text-center" role="alert">
     Load a map to get exploring.
   </div>
@@ -62,5 +72,6 @@
 </div>
 
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </body>
 </html>
